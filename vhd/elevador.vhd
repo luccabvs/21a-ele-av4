@@ -11,5 +11,7 @@ architecture  rtl OF elevador IS
 
 begin
 
-
+  ABRIR <= not M;
+  TRAVA <= M;
+  
 end architecture;

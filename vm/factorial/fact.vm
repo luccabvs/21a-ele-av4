@@ -1,1 +1,9 @@
 function fact 0
+push constant 2
+lt
+if-goto else
+push constant 6
+return
+label else
+push constant 1
+return 

@@ -44,7 +44,11 @@ public class Code {
         List<String> commands = new ArrayList<String>();
 
         if (command.equals("delete")) {
- //           commands.add("   ");
+            commands.add("leaw $0, %A");
+            commands.add("movw (%A), %D");
+            commands.add("decw %D");
+            commands.add("movw %D, (%A)");
+            //           commands.add("   ");
         }
 
         if ( command.equals("addi")) {

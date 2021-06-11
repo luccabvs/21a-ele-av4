@@ -11,5 +11,7 @@ architecture  rtl OF tabelaVerdade IS
 
 begin
 
+	S0 <= (B and C) or (A and (not B) and (not C));
+	S1 <= A and (not B);
 
 end architecture;

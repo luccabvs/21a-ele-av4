@@ -1,1 +1,17 @@
 function abs 0
+push argument 0 
+push constant 0
+lt
+if-goto negativo
+
+push argument 0
+goto ret
+
+label negativo
+push argument 0
+neg
+
+goto ret
+
+label ret
+return
